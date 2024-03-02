@@ -1,0 +1,56 @@
+[
+  {
+    "ref": "721affe8-0eaf-40e2-9226-1d037f0eece5",
+    "keyword": "aa46abf0c03c4795d44c91403a7858d5",
+    "answer": "hola",
+    "options": {},
+    "from": "573147950164",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
+  },
+  {
+    "ref": "4bf4cdae-0bf1-4beb-ae12-d707fa79acf9",
+    "keyword": "79e7fc16f7fb85373fd25a99390f44c0",
+    "answer": "productos",
+    "options": {},
+    "from": "573147950164",
+    "refSerialize": "e1f122c9d7726ff1cd18fe68d4526788"
+  },
+  {
+    "ref": "ans_e651e7d6-78d2-4d78-9881-98920adb7bc6",
+    "keyword": "key_f68f3b4d-363e-4dd5-8558-5f782526eb3e",
+    "answer": "> Netflix\n> Max\n> Prime",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "1320339e2b588d094586036cb5704847",
+    "from": "573147950164"
+  },
+  {
+    "ref": "ans_2bec0e0c-3977-44be-8007-09c8a2916976",
+    "keyword": "ans_e651e7d6-78d2-4d78-9881-98920adb7bc6",
+    "answer": "te comparto los siguientes links de interes sobre el proyecto\n👉 *doc* para ver la documentación\n👉 *gracias*  para ver la lista de videos\n👉 *discord* unirte al discord",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "a5af5b2f306aa3f23d8372869f98e645",
+    "from": "573147950164"
+  }
+]
