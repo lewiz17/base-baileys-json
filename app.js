@@ -26,7 +26,7 @@ app.post("/send-message", async (req, res) => {
   }
 });
 
-app.get("api/get-qr", async (req, res) => {
+app.get("/api/get-qr", async (req, res) => {
   try {
     await handleGetQR(req, res);
   } catch (error) {
