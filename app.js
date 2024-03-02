@@ -14,7 +14,7 @@ const BaileysProvider = require("@bot-whatsapp/provider/baileys");
 const adapterProvider = createProvider(BaileysProvider);
 
 const app = express();
-const port = process.env.PORT || 3000; // Set a default port (3000) or use the one from the environment variable
+const port = process.env.PORT || 3002; // Set a default port (3000) or use the one from the environment variable
 
 app.use(bodyParser.json()); // Use body-parser middleware to parse JSON requests
 
