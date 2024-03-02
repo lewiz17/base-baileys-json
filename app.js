@@ -42,7 +42,7 @@ app.get("/get-qr", async (req, res) => {
 });
 
 async function handleSendMessageBot(req, res) {
-  console.log("body");
+  console.log("body", req?.body);
   await adapterProvider.sendText("573045405216@c.us", "Mensaje desde API");
   res.json({ data: "mensaje enviado!" });
 }
