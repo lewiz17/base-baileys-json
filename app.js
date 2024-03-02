@@ -19,9 +19,7 @@ app.use(bodyParser.json()); // Use body-parser middleware to parse JSON requests
 
 app.post("/send-message", async (req, res) => {
   try {
-    // You can add more specific validations if needed
-
-    await handleSendMessageBot();
+    await handleSendMessageBot(req, res);
   } catch (error) {
     console.error("Error in send-message endpoint:", error);
     res.status(500).json({ error: "Internal server error" });
@@ -37,10 +35,6 @@ app.get("/get-qr", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
 async function handleSendMessageBot(req, res) {
   console.log("body", req.body);
   await adapterProvider.sendText("573045405216@c.us", "Mensaje desde API");
@@ -50,9 +44,12 @@ async function handleSendMessageBot(req, res) {
 async function handleGetQR(req, res) {
   const YOUR_PATH_QR = join(process.cwd(), `bot.qr.png`);
   const fileStream = createReadStream(YOUR_PATH_QR);
-
   res.setHeader("Content-Type", "image/png");
   fileStream.pipe(res);
 }
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 
 module.exports = app;
